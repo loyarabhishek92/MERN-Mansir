@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        body{
+            padding: 20px;
+        }
+        .grid-box{
+            max-width: 500px;
+            /* height: 500px; */
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            /* gap: 10px; */
+            /* column-gap: 20px;
+            row-gap: 10px; */
+            /* grid-template-rows: 100px 150px 50px; */
+            /* justify-content: space-between; */
+            /* justify-items: start; */
+            /* place-items: start; */
+            /* align-content: center; */
+            /* place-content: center; */
+
+        }
+        .bx1{
+            background-color: red;
+            /* place-self: end; */
+            /* justify-self: center; */
+        }
+        .bx2{
+            background-color: gray;
+            /* order: 6; */
+        }
+        .bx3{
+            background-color: green;
+        }
+        .bx4{
+            background-color: yellow;
+            grid-column: span 2;
+        }
+        .bx5{
+            background-color: pink;
+        }
+        .bx6{
+            background-color: yellowgreen;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+
+
+
+
+        .grid-box1{
+            max-width: 400px;
+            height: 250px;
+            margin-top: 50px;
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .item{
+            text-align: center;
+        }
+        .item1{
+            background-color: bisque;
+            grid-row: span 3;
+        }
+        .item2{
+            background-color: red;
+            grid-column: span 2;
+        }
+        .item3{
+            background-color: yellowgreen;
+        }
+        .item4{
+            background-color: blueviolet;
+        }
+        .item5{
+            background-color: pink;
+        }
+        .item6{
+            background-color: rebeccapurple;
+            grid-row: span 2;
+        }
+        .item7{
+            background-color: rosybrown;
+        }
+        .item8{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-box">
+        <div class="bx bx1">box1</div>
+        <div class="bx bx2">box2</div>
+        <div class="bx bx3">box3</div>
+        <div class="bx bx4">box4</div>
+        <div class="bx bx5">box5</div>
+        <div class="bx bx6">box6</div>
+    </div>
+
+    <div class="grid-box1">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item4">item4</div>
+        <div class="item item5">item5</div>
+        <div class="item item6">item6</div>
+        <div class="item item7">item7</div>
+        <div class="item item8">item8</div>
+    </div>
+</body>
+</html>
