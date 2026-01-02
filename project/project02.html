@@ -96,16 +96,16 @@
 
         .houses {
             display: grid;
-            height: 600px;
             width: 100%;
             margin-top: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* grid-template-columns: 1fr 1fr 1fr 1fr; */
             grid-template-rows: 1fr 1fr;
             gap: 15px;
-            border: 2px solid black;
         }
 
         .house1 {
+            height: 300px;
             background-image: url(https://www.w3schools.com/w3images/house5.jpg);
             background-repeat: no-repeat;
             background-size: cover;
@@ -339,6 +339,17 @@
             color: white;
             background-color: black;
         }
+        @media(max-width:600px){
+            body{
+                background-color: red;
+            }
+        }
+        @media(max-width:400px){
+            body{
+                background-color: green;
+            }
+        }
+
     </style>
 </head>
 

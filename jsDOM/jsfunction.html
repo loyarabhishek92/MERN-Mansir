@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+<body>
+    <h3>i am javascript DOM function</h3>
+    <button onclick="handlechange()">click here to action</button>
+</body>
+<script>
+    const h3Element = document.querySelector('h3');
+
+    const handlechange =() => {
+        h3Element.style.fontSize='30px';
+        h3Element.style.color='red';
+    }
+</script>
+</html>
