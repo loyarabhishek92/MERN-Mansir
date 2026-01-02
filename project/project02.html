@@ -11,16 +11,23 @@
             padding: 0;
             box-sizing: border-box;
         }
+        /* body{
+            height: 100%;
+            width: 100%;
+        } */
 
         header {
-            height: 55px;
-            padding: 0 30px;
+            height: 100%;
+            width: 100%;
+            padding: 1rem;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0px;
             background-color: white;
+            gap: 10px;
         }
 
         .logo {
@@ -42,6 +49,7 @@
 
         .link {
             display: flex;
+            flex-wrap: wrap;
             gap: 30px;
         }
 
@@ -54,6 +62,7 @@
 
         .image {
             height: 700px;
+            width: 100%;
             margin: 0px 10px;
             background-image: url(https://www.w3schools.com/w3images/architect.jpg);
             background-repeat: no-repeat;
@@ -65,6 +74,7 @@
 
         .para {
             display: flex;
+            flex-wrap: wrap;
             gap: 15px;
             align-items: center;
             color: white;
@@ -87,7 +97,8 @@
             opacity: 0.75;
         }
 
-        .house{
+        .project-section{
+            height: 100%;
             width: 100%;
             padding: 0px 30px;
             margin-top: 70px;
@@ -95,14 +106,30 @@
 
 
         .houses {
-            display: grid;
-            height: 600px;
+            height: 100%;
             width: 100%;
             margin-top: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+            /* justify-content: center; */
+            /* grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr; */
             gap: 15px;
-            border: 2px solid black;
+            /* border: 2px solid black; */
+        }
+
+        .allhouse{
+            width: 100%;
+            height: 250px;
+        }
+        .allhouse p{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            width: 150px;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 1.1rem;
         }
 
         .house1 {
@@ -111,30 +138,10 @@
             background-size: cover;
         }
 
-        .house1 p {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            width: 150px;
-            font-weight: bolder;
-            text-align: center;
-            font-size: 1.1rem;
-        }
-
         .house2 {
             background-image: url(https://www.w3schools.com/w3images/house2.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-        }
-
-        .house2 p {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            width: 150px;
-            font-weight: bolder;
-            text-align: center;
-            font-size: 1.1rem;
         }
 
         .house3 {
@@ -143,30 +150,10 @@
             background-size: cover;
         }
 
-        .house3 p {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            width: 150px;
-            font-weight: bolder;
-            text-align: center;
-            font-size: 1.1rem;
-        }
-
         .house4 {
             background-image: url(https://www.w3schools.com/w3images/house4.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-        }
-
-        .house4 p {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            width: 150px;
-            font-weight: bolder;
-            text-align: center;
-            font-size: 1.1rem;
         }
 
         .house5 {
@@ -175,30 +162,10 @@
             background-size: cover;
         }
 
-        .house5 p {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            width: 150px;
-            font-weight: bolder;
-            text-align: center;
-            font-size: 1.1rem;
-        }
-
         .house6 {
             background-image: url(https://www.w3schools.com/w3images/house5.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-        }
-
-        .house6 p {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            width: 150px;
-            font-weight: bolder;
-            text-align: center;
-            font-size: 1.1rem;
         }
 
         .house7 {
@@ -207,34 +174,15 @@
             background-size: cover;
         }
 
-        .house7 p {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            width: 150px;
-            font-weight: bolder;
-            text-align: center;
-            font-size: 1.1rem;
-        }
-
         .house8 {
             background-image: url(https://www.w3schools.com/w3images/house3.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
 
-        .house8 p {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            width: 150px;
-            font-weight: bolder;
-            text-align: center;
-            font-size: 1.1rem;
-        }
-
         .about {
             width: 100%;
+            height: 100%;
             padding: 0px 30px;
         }
 
@@ -256,9 +204,12 @@
 
         .flex-card {
             width: 100%;
+            height: 100%;
             margin-top: 50px;
-            display: flex;
-            column-gap: 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            justify-content: center;
+            gap: 15px;
         }
 
         img {
@@ -287,6 +238,7 @@
 
         .contact {
             width: 100%;
+            height: 100%;
             padding: 0 30px;
         }
 
@@ -302,12 +254,14 @@
 
         .form {
             width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: column;
         }
 
         .contact input {
             width: 100%;
+            height: 100%;
             margin: 10px 0px;
             padding: 10px 0px 10px 5px;
             font-size: 1.01rem;
@@ -330,7 +284,8 @@
 
         footer {
             width: 100%;
-            height: 80px;
+            height: 100%;
+            padding: 1.5em;
             margin-top: 5px;
             display: flex;
             justify-content: center;
@@ -360,32 +315,32 @@
             <h1>Architects</h1>
         </div>
     </section>
-    <section class="house">
+    <section class="project-section">
         <h1>Projects</h1>
         <hr>
         <div class="houses">
-            <div class="house1">
+            <div class="allhouse house1">
                 <p>Summer House</p>
             </div>
-            <div class="house2">
+            <div class="allhouse house2">
                 <p>Brick House</p>
             </div>
-            <div class="house3">
+            <div class="allhouse house3">
                 <p>Renovated</p>
             </div>
-            <div class="house4">
+            <div class="allhouse house4">
                 <p>Barn House</p>
             </div>
-            <div class="house5">
+            <div class="allhouse house5">
                 <p>Brick House</p>
             </div>
-            <div class="house6">
+            <div class="allhouse house6">
                 <p>Brick House</p>
             </div>
-            <div class="house7">
+            <div class="allhouse house7">
                 <p>Renovated</p>
             </div>
-            <div class="house8">
+            <div class="allhouse house8">
                 <p>Barn House</p>
             </div>
         </div>
