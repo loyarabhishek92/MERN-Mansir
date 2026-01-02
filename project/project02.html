@@ -11,6 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         /* body{
             height: 100%;
             width: 100%;
@@ -52,6 +53,14 @@
             flex-wrap: wrap;
             gap: 30px;
         }
+         @media(max-width:400px) {
+            .link {
+                display: none;
+            }
+            .para h1{
+                display: none;
+            }
+        }
 
         .link a {
             text-decoration: none;
@@ -62,7 +71,6 @@
 
         .image {
             height: 700px;
-            width: 100%;
             margin: 0px 10px;
             background-image: url(https://www.w3schools.com/w3images/architect.jpg);
             background-repeat: no-repeat;
@@ -74,30 +82,30 @@
 
         .para {
             display: flex;
+            align-items: center;
+            justify-content: center;
             flex-wrap: wrap;
             gap: 15px;
-            align-items: center;
             color: white;
         }
-        .para h1{
+
+        .para h1 {
             letter-spacing: 4px;
             font-size: 2.5rem;
             margin-top: 10px;
             font-weight: lighter;
         }
 
-        .hea {
+        .para p {
             background-color: #1B1C1E;
             font-size: 2.5rem;
             padding: 10px;
-            display: inline-block;
             color: white;
             letter-spacing: 4px;
             font-weight: bolder;
-            opacity: 0.75;
         }
 
-        .project-section{
+        .project-section {
             height: 100%;
             width: 100%;
             padding: 0px 30px;
@@ -110,7 +118,7 @@
             width: 100%;
             margin-top: 40px;
             display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             /* justify-content: center; */
             /* grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr; */
@@ -118,11 +126,12 @@
             /* border: 2px solid black; */
         }
 
-        .allhouse{
+        .allhouse {
             width: 100%;
-            height: 250px;
+            height: 300px;
         }
-        .allhouse p{
+
+        .allhouse p {
             background-color: black;
             color: white;
             padding: 10px;
@@ -311,7 +320,7 @@
     </header>
     <section class="image">
         <div class="para">
-            <span class="hea">BR</span>
+            <p class="hea">BR</p>
             <h1>Architects</h1>
         </div>
     </section>
