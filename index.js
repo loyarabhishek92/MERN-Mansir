@@ -20,9 +20,11 @@
 // console.log(person.substring(1,5));
 // console.log(person.split('a'));
 
-const personName="ram";
-const age=92;
-const job='dev';
-// template literals
-console.log(`he is good ${personName} ${age} ${job}`);
-console.log(`he is good ${personName} ${age} ${job}`);
+// const personName="ram";
+// const age=92;
+// const job='dev';
+// // template literals
+// console.log(`he is good ${personName} ${age} ${job}`);
+// console.log(`he is good ${personName} ${age} ${job}`);
+// console.log("abishek\"".length);
+console.log("abishek\"".toUpperCase());
