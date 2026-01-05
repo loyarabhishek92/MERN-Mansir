@@ -1,2 +1,28 @@
-const person="abhishek";
-console.log(person);
+// const person="abhishek raj\nrauniyar bad bad bad";
+// console.log(person.at(6));
+// console.log(person.charAt(5));
+// console.log(person.concat(" i am coder").concat(' from sarlahi'));
+// console.log("shyam".concat('-Dev').concat('-Jee'));
+// console.log(person.toUpperCase());
+// console.log(person.toLowerCase());
+// console.log(person.endsWith('a'));
+// console.log(person.includes('ni'));
+// console.log(person.indexOf('i'));
+// console.log(person.isWellFormed());
+// console.log(person.isWellFormed());
+// console.log(person.length);
+// console.log(person.padStart());
+// console.log(person.repeat(4));
+// console.log(person.replace('bad','good'));
+// console.log(person.replaceAll('bad','good'));
+// console.log(person.replaceAll('bad','good'));
+// console.log(person.slice(0,3));
+// console.log(person.substring(1,5));
+// console.log(person.split('a'));
+
+const personName="ram";
+const age=92;
+const job='dev';
+// template literals
+console.log(`he is good ${personName} ${age} ${job}`);
+console.log(`he is good ${personName} ${age} ${job}`);
