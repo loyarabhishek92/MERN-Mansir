@@ -1,4 +1,4 @@
-const person="abhishek raj rauniyar bad bad bada";
+// const person="abhishek raj rauniyar bad bad bada";
 // console.log(person.at(9));
 // console.log(person.charAt(1));
 // console.log(person.concat(" i am coder").concat(' from sarlahi'));
@@ -159,7 +159,7 @@ switch(weekDay){
 }*/
 
 
-let a =20;
+/*let a =20;
 let b=30;
 const calcu= a-b;
 switch(calcu){
@@ -180,4 +180,86 @@ switch(calcu){
         break;
     default:
         console.log('don\'t perform any calculation');
+}*/
+
+/*let v1 = 21;
+let v2 = 38;
+const result = 'multi';
+switch(result){
+    case('add'):
+        console.log(`Addition of ${v1} and ${v2} is ${(v1+v2)}.`);
+        break;
+    case('sub'):
+        console.log(`Subtraction of ${v1} and ${v2} is ${(v1-v2)}.`);
+        break;
+    case('multi'):
+        console.log(`Multiplication of ${v1} and ${v2} is ${(v1*v2)}.`);
+        break;
+    case('divide'):
+        console.log(`Division of ${v1} and ${v2} is ${(v1/v2)}.`);
+        break;
+    case('module'):
+        console.log(`Modules of ${v1} and ${v2} is ${(v1%v2)}.`);
+        break;
+    default:
+        console.log('Expression is invalid');
+}*/
+
+
+// loops
+
+/*let a=0;
+while(a<10){
+    a++;
+    console.log(`${a}`);
+}*/
+
+/*let a = 0;
+while(a<10){
+    a++;
+    console.log(`${a}`);
+    if(a%2===0){
+        console.log('even number');
+    }else{
+        console.log('odd number');
+    }  
+}*/
+
+/*let i = 0;
+do {
+  i++;
+  console.log('hello world');
+
+} while (i < 5)
+*/
+
+/*let sum =0;
+for (let i=1 ; i<=15;i++)
+{
+    console.log(`${i}`);
+    sum = sum + i;
 }
+console.log(`The sum of all number is ${sum}`);*/
+
+/*let i=0;
+for(i=1; i<=5; i++){
+    
+    if(i%3===0 && i%5===0){
+        console.log(`${i} is fizz buzz`);
+    }else if(i%3===0){
+        console.log(`${i} is fizz`);
+    }else if(i%5===0){
+        console.log(`${i} is buzz`);
+    }else{
+        console.log(`${i}`);
+    }
+}*/
+
+/*let sum = 0;
+const person1 = [11,22,33,44,55,66];
+for(let i of person1){
+    // console.log('hello')
+    console.log(i);
+    sum = sum +i; 
+}
+console.log(`sum of array is ${sum}`);*/
